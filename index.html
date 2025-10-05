@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanis Fathan Gunawan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loading">
+        <svg
+          aria-label="loader being flipped clockwise and circled by three white curves fading in and out"
+          role="img"
+          height="56px"
+          width="56px"
+          viewBox="0 0 56 56"
+          class="loader"
+        >
+          <clipPath id="sand-mound-top">
+            <path
+              d="M 14.613 13.087 C 15.814 12.059 19.3 8.039 20.3 6.539 C 21.5 4.789 21.5 2.039 21.5 2.039 L 3 2.039 C 3 2.039 3 4.789 4.2 6.539 C 5.2 8.039 8.686 12.059 9.887 13.087 C 11 14.039 12.25 14.039 12.25 14.039 C 12.25 14.039 13.5 14.039 14.613 13.087 Z"
+              class="loader__sand-mound-top"
+            ></path>
+          </clipPath>
+          <clipPath id="sand-mound-bottom">
+            <path
+              d="M 14.613 20.452 C 15.814 21.48 19.3 25.5 20.3 27 C 21.5 28.75 21.5 31.5 21.5 31.5 L 3 31.5 C 3 31.5 3 28.75 4.2 27 C 5.2 25.5 8.686 21.48 9.887 20.452 C 11 19.5 12.25 19.5 12.25 19.5 C 12.25 19.5 13.5 19.5 14.613 20.452 Z"
+              class="loader__sand-mound-bottom"
+            ></path>
+          </clipPath>
+          <g transform="translate(2,2)">
+            <g
+              transform="rotate(-90,26,26)"
+              stroke-linecap="round"
+              stroke-dashoffset="153.94"
+              stroke-dasharray="153.94 153.94"
+              stroke="hsl(0,0%,100%)"
+              fill="none"
+            >
+              <circle
+                transform="rotate(0,26,26)"
+                r="24.5"
+                cy="26"
+                cx="26"
+                stroke-width="2.5"
+                class="loader__motion-thick"
+              ></circle>
+              <circle
+                transform="rotate(90,26,26)"
+                r="24.5"
+                cy="26"
+                cx="26"
+                stroke-width="1.75"
+                class="loader__motion-medium"
+              ></circle>
+              <circle
+                transform="rotate(180,26,26)"
+                r="24.5"
+                cy="26"
+                cx="26"
+                stroke-width="1"
+                class="loader__motion-thin"
+              ></circle>
+            </g>
+            <g transform="translate(13.75,9.25)" class="loader__model">
+              <path
+                d="M 1.5 2 L 23 2 C 23 2 22.5 8.5 19 12 C 16 15.5 13.5 13.5 13.5 16.75 C 13.5 20 16 18 19 21.5 C 22.5 25 23 31.5 23 31.5 L 1.5 31.5 C 1.5 31.5 2 25 5.5 21.5 C 8.5 18 11 20 11 16.75 C 11 13.5 8.5 15.5 5.5 12 C 2 8.5 1.5 2 1.5 2 Z"
+                fill="hsl(var(--hue),90%,85%)"
+              ></path>
+        
+              <g stroke-linecap="round" stroke="hsl(35,90%,90%)">
+                <line
+                  y2="20.75"
+                  x2="12"
+                  y1="15.75"
+                  x1="12"
+                  stroke-dasharray="0.25 33.75"
+                  stroke-width="1"
+                  class="loader__sand-grain-left"
+                ></line>
+                <line
+                  y2="21.75"
+                  x2="12.5"
+                  y1="16.75"
+                  x1="12.5"
+                  stroke-dasharray="0.25 33.75"
+                  stroke-width="1"
+                  class="loader__sand-grain-right"
+                ></line>
+                <line
+                  y2="31.5"
+                  x2="12.25"
+                  y1="18"
+                  x1="12.25"
+                  stroke-dasharray="0.5 107.5"
+                  stroke-width="1"
+                  class="loader__sand-drop"
+                ></line>
+                <line
+                  y2="31.5"
+                  x2="12.25"
+                  y1="14.75"
+                  x1="12.25"
+                  stroke-dasharray="54 54"
+                  stroke-width="1.5"
+                  class="loader__sand-fill"
+                ></line>
+                <line
+                  y2="31.5"
+                  x2="12"
+                  y1="16"
+                  x1="12"
+                  stroke-dasharray="1 107"
+                  stroke-width="1"
+                  stroke="hsl(35,90%,83%)"
+                  class="loader__sand-line-left"
+                ></line>
+                <line
+                  y2="31.5"
+                  x2="12.5"
+                  y1="16"
+                  x1="12.5"
+                  stroke-dasharray="12 96"
+                  stroke-width="1"
+                  stroke="hsl(35,90%,83%)"
+                  class="loader__sand-line-right"
+                ></line>
+        
+                <g stroke-width="0" fill="hsl(35,90%,90%)">
+                  <path
+                    d="M 12.25 15 L 15.392 13.486 C 21.737 11.168 22.5 2 22.5 2 L 2 2.013 C 2 2.013 2.753 11.046 9.009 13.438 L 12.25 15 Z"
+                    clip-path="url(#sand-mound-top)"
+                  ></path>
+                  <path
+                    d="M 12.25 18.5 L 15.392 20.014 C 21.737 22.332 22.5 31.5 22.5 31.5 L 2 31.487 C 2 31.487 2.753 22.454 9.009 20.062 Z"
+                    clip-path="url(#sand-mound-bottom)"
+                  ></path>
+                </g>
+              </g>
+        
+              <g stroke-width="2" stroke-linecap="round" opacity="0.7" fill="none">
+                <path
+                  d="M 19.437 3.421 C 19.437 3.421 19.671 6.454 17.914 8.846 C 16.157 11.238 14.5 11.5 14.5 11.5"
+                  stroke="hsl(0,0%,100%)"
+                  class="loader__glare-top"
+                ></path>
+                <path
+                  transform="rotate(180,12.25,16.75)"
+                  d="M 19.437 3.421 C 19.437 3.421 19.671 6.454 17.914 8.846 C 16.157 11.238 14.5 11.5 14.5 11.5"
+                  stroke="hsla(0,0%,100%,0)"
+                  class="loader__glare-bottom"
+                ></path>
+              </g>
+        
+              <rect height="2" width="24.5" fill="hsl(var(--hue),90%,50%)"></rect>
+              <rect
+                height="1"
+                width="19.5"
+                y="0.5"
+                x="2.5"
+                ry="0.5"
+                rx="0.5"
+                fill="hsl(var(--hue),90%,57.5%)"
+              ></rect>
+              <rect
+                height="2"
+                width="24.5"
+                y="31.5"
+                fill="hsl(var(--hue),90%,50%)"
+              ></rect>
+              <rect
+                height="1"
+                width="19.5"
+                y="32"
+                x="2.5"
+                ry="0.5"
+                rx="0.5"
+                fill="hsl(var(--hue),90%,57.5%)"
+              ></rect>
+            </g>
+          </g>
+        </svg>
+    </div>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">CookBookKu</a>
+            </div>
+            <div class="menu" id="nav">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Chef">Chef</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Resep">Resep</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#" class="tblLogin">Login</a></li>
+                </ul>
+            </div>
+            <div id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- Home -->
+        <section id="Home">
+            <img src="img/cook.png" alt="">
+            <div class="kolom">
+                <p class="deskripsi">
+                    Makan Enak #dirumahAja
+                </p>
+                <h2>CookBookKu, Buku Resep Harian Mu</h2>
+                <p>
+                    Buatlah hidangan lezat dengan mudah menggunakan resep dari para chef terkenal. Temukan berbagai resep mulai dari masakan rumahan hingga hidangan internasional yang akan memanjakan lidah Anda setiap hari.
+                </p>
+                <p class="bksTbl">
+                    <a href="" class="tbl2">Pelajari Lebih Lanjut</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Chef Yang Bekerjasama -->
+         <section id="Chef">    
+            <h2 class="judChef" data-aos="fade-up">Chef Yang Bekerjasama</h2>
+            <div class="wrap flex">
+                <div class="chef" data-aos="fade-up">
+                    <img src="https://i.pinimg.com/736x/70/52/5e/70525ed2970c2bda24a0c32f1057a056.jpg" alt="">
+                    <div class="sejarah">
+                        <h3>Junior John Rorimpandey</h3>
+                        <p>Junior John Rorimpandey, yang dikenal sebagai Juna Rorimpandey atau Chef Juna adalah seorang jurutama masak dan koki selebritas berkebangsaan Indonesia. Juna merupakan koki dengan spesialisasi dalam masakan Jepang dan masakan Prancis yang ia pelajari ketika tinggal selama 12 tahun di Amerika Serikat.</p>
+                    </div>
+                </div>
+                <div class="chef" data-aos="fade-up">
+                    <img src="https://cnc-magazine.oramiland.com/parenting/images/Chef_Renatta_pikiran-rakyat.com.width-800.format-webp.webp" alt="">
+                    <div class="sejarah">
+                        <h3>Renatta Moeloek</h3>
+                        <p>Chef Renatta adalah alumni Le Cordon Bleu Paris dan dikenal dengan spesialisasi masakan Perancisnya.Tak heran, chef Renatta Moeloek ini pernah bergabung di sebuah restoran dengan Michelin Star di Paris, Perancis. Ia kembali ke Indonesia untuk membuka layanan makan malam pribadi dan restoran yang berfokus pada kesehatan​​. Kemudian dirinya menjadi chef Indonesia yang terkenal sejak muncul sebagai juri Master Chef Indonesia.</p>
+                    </div>
+                </div>
+                <div class="chef" data-aos="fade-up">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14wCKB4krQ9GUgrUFZqhlxUYm-DXKEy07Lg&s" alt="">
+                    <div class="sejarah">
+                        <h3>Dims The MeatGuy</h3>
+                        <p>Dimas Ramadhan Pangestu, atau yang lebih dikenal sebagai Dims the Meatguy, adalah seorang jurutama masak (chef) dan pengusaha yang sukses. Meskipun ia tidak memiliki gelar formal seorang chef, ia memulai karirnya sebagai kreator konten memasak daging, dan kesuksesannya membawanya mendirikan Meatguy Steakhouse serta terpilih menjadi juri di World Steak Challenge. </p>
+                    </div>
+                </div>
+                <div class="chef" data-aos="fade-up">
+                    <img src="https://yt3.googleusercontent.com/cAjTWMsz15JpNa5eFn5WLQiTTrgSz-dBB8kZOw_lQc9dBLEL29B_OlETFjtt5-RLGAxnvIFdIw=s900-c-k-c0x00ffffff-no-rj" alt="">
+                    <div class="sejarah">
+                        <h3>Devina Hermawan</h3>
+                        <p>Devina mulai dikenal secara luas sejak ia mengikuti acara televisi MasterChef Indonesia (musim kelima).Setelah MasterChef, Devina mulai aktif membagikan video resep dan tutorial memasak di kanal YouTubenya yang dikenal dengan ciri khas "tips & tricks" dan metode anti gagalnya.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section id="Menu">
+             <h2 class="judMenu">Menu Yang Bisa Dibuat</h2>
+            <div id="food">
+                <div class="horizontalWrap">
+                    <div class="horizontal row1">
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food5.png" alt="">
+                        </div>
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food6.png" alt="">
+                        </div>
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food1.png" alt="">
+                        </div>
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food2.png" alt="">
+                        </div>
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food3.png" alt="">
+                        </div>
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food4.png" alt="">
+                        </div>
+                        <div class="card"data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food5.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-left">
+                            <h3>Makanan</h3>
+                            <img src="img/food6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="horizontal row2">
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food5.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food6.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food1.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food2.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food3.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food4.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food5.png" alt="">
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <h3>Makanan</h3>
+                            <img src="img/food6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section id="Resep">
+            <h2>Resep Makanan</h2>
+            <div class="wrap col">
+                <div class="video" data-aos="flip-left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w7a3iW3NTh0?si=62U3tSMZhOYATMNa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="cara">
+                    <!-- <div class="wrapItem"> -->
+                        <div class="item" data-aos="flip-up">
+                            <div class="question">Alat Yang Diperlukan</div>
+                            <div class="answer">
+                                <ul>
+                                    <li>- Tisu kasar</li>
+                                    <li>- Wajan</li>
+                                    <li>- Pisau</li>
+                                    <li>- Talenan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item" data-aos="flip-up">
+                            <div class="question">Bahan Yang Diperlukan</div>
+                            <div class="answer">
+                                <ul>
+                                    <li>- Potongan daging ribeye seberat 200-300gram</li>
+                                    <li>- Kosher salt</li>
+                                    <li>- Lada hitam freh grind</li>
+                                    <li>- Minyak</li>
+                                    <li>- Salted butter</li>
+                                    <li>- Bawang putih</li>
+                                    <li>- thyme</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                    <div class="item" data-aos="flip-up">
+                        <div class="question">Langkah Pembuatan</div>
+                        <div class="answer">
+                            <ul>
+                                <li>- Tap tap potongan steak dengan tisu kasar agar daging kering</li>
+                                <li>- Beri bumbu pada potonga steak dengan kosher salt dan lada hitam fresh grind</li>
+                                <li>- Pastikan wajan sudah panas sampai mengeluarkan uap lalu masukkan minyak</li>
+                                <li>- Masak steak sampai sedikit kecoklatan lalu basting steak dengan thyme, bawang putih, dan salted butter.</li>
+                                <li>- Setelah itu, resting steak kurang lebih 5 menit agar otot daging tidak kaku</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap col dua">
+                <div class="video" data-aos="flip-left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2f-VPej0yeI?si=goFlQ3i5Zxr2mXCK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="cara">
+                    <!-- <div class="wrapItem"> -->
+                        <div class="item" data-aos="flip-up">
+                            <div class="question">Alat Yang Diperlukan</div>
+                            <div class="answer">
+                                <ul>
+                                    <li>- Mangkuk untuk menampung ayam</li>
+                                    <li>- Blender</li>
+                                    <li>- Wajan</li>
+                                    <li>- Rubber spatula untuk mengaduk ayam</li>
+                                    <li>- Spatula</li>
+                                    <li>- Kuas</li>
+                                    <li>- Capitan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item" data-aos="flip-up">
+                            <div class="question">Bahan Yang Diperlukan</div>
+                            <div class="answer">
+                                <ul>
+                                    <li><strong>Bahan Marinasi</strong></li>
+                                    <li>- 2 ekor ayam, potong 4 bagian</li>
+                                    <li>- 2 buah jeruk nipis</li>
+                                    <li>- 1 sdt garam</li>
+                                    <li>- 1 sdt kaldu</li>
+                                    <li>- 8 sdm kecap manis</li>
+                                    <li>- 2 sdm air asam jawa, opsional</li>
+                                    <li><strong>Bahan Bumbu Halus</strong></li>
+                                    <li>- 8 siung bawang putih</li>
+                                    <li>- 10 siung bawang merah</li>
+                                    <li>- 4 butir kemiri</li>
+                                    <li>- 6 cm kunyit</li>
+                                    <li>- 6 cm lengkuas</li>
+                                    <li>- 3 buah cabai merah tanjung / 8 buah cabai keriting</li>
+                                    <li>- 1 sdt ketumbar sangrai</li>
+                                    <li>- 1 sachet terasi</li>
+                                    <li>- minyak secukupnya</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                    <div class="item" data-aos="flip-up">
+                        <div class="question">Langkah Pembuatan</div>
+                        <div class="answer">
+                            <ul>
+                                <li>- Masukkan garam secukupnya dan perasan jeruk nipis ke dalam ayam, aduk rata. Diamkan 5-10 menit lalu bilas, tiriskan.</li>
+                                <li>- Masukkan kecap manis, air asam jawa, garam, dan kaldu bubuk, aduk rata, tutup dengan plastik wrap lalu diamkan 3-4 jam atau semalaman di dalam kulkas.</li>
+                                <li>- Haluskan bawang putih, bawang merah, kemiri, lengkuas, kunyit, ketumbar, terasi, cabai merah, dan sedikit minyak dengan blender lalu tumis hingga setengah matang.</li>
+                                <li>- Masukkan serai, daun salam, merica, dan margarin tumis hingga matang kemudian masukkan ayam, aduk rata.</li>
+                                <li>- Tambahkan air, kecap manis, garam, kaldu, dan gula pasir masak hingga meresap di api sedang selama 25 menit, tiriskan.</li>
+                                <li>- Sisihkan bumbu ungkepan ke dalam mangkuk lalu campurkan dengan margarin, aduk rata.</li>
+                                <li>- Panaskan wajan, masukkan ayam lalu oles dengan bumbu oles, panggang hingga matang.</li>
+                                <li>- Untuk oven atau air fryer, panggang ayam dan terong yang telah dioles bumbu di suhu 170 derajat celcius selama 15 menit.</li>
+                                <li>- Ayam bakar kecap siap disajikan dengan pelengkap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </div>
+    <div id="Contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footerSection">
+                    <h3>CookBookKu</h3>
+                    <p>CookBookKu adalah platform resep masakan yang menyediakan berbagai resep lezat dan mudah diikuti untuk membantu Anda menciptakan hidangan istimewa di rumah.</p>
+                </div>
+                <div class="footerSection">
+                    <h3>About</h3>
+                    <p>
+                    CookBookKu terinspirasi dari keinginan untuk membuat masakan di rumah menjadi lebih mudah dan menyenangkan bagi semua orang. Kami percaya bahwa dengan resep yang tepat, siapa pun dapat menciptakan hidangan lezat di dapur mereka sendiri.
+                    </p>
+                </div>
+                <div class="footerSection">
+                    <h3>Contact</h3>
+                    <p>
+                        <ul>
+                            <li>bisamasakgasi@gmail.com</li>
+                            <li>0213564935687</li>
+                            <li>tiktok.com/@masaGaBisaMsk</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="footerSection">
+                    <h3>Resep</h3>
+                    <p>
+                        Login untuk mendapatkan resep menarik lainnya yang membuat pengalaman memasak Anda semakin seru dan bervariasi setiap hari!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2025. <b>CookBookKu</b> All Rights Reserved.
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ Accordion Smooth</title>
+  <style>
+    .contact-box {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #4cafef;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: goyang 1.5s ease-in-out infinite;
+}
+
+/* Bikin keyframes animasi goyang */
+@keyframes goyang {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(3deg); }
+  50%  { transform: rotate(-3deg); }
+  75%  { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+  </style>
+</head>
+<body>
+
+<div class="contact-box">
+  Hubungi Saya
+</div>
+
+</body>
+</html>
