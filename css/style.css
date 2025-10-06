@@ -614,7 +614,8 @@ h3 {
 #copyright {
     text-align: center;
     width: 100%;
-    padding: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     margin-top: 50px;
 }
 
