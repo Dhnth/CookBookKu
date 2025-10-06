@@ -711,4 +711,9 @@ h3 {
         width: 80%;
         margin: 20px auto;
     }
+
+    #loading {
+      width: 100%;
+      height: 100vh;
+    }
 }
